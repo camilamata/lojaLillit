@@ -48,6 +48,25 @@ add = (x,y) => console.log(x + y)
 add(3,4)
 //eu pude excluir o escopo {} e o "return" pois foi apenas uma linha de return
 
+const eu =  {
+    nome: "camila", //propriedade
+    idade: 24, //propriedade
+    cidade: "Bicas", //propriedade
+    saudacao: (data) => `coe ze, hoje é dia ${data}` //função
+}
+console.log(eu.saudacao('22/03/2022'))
+console.log(eu)
+
+trilha = new Object() 
+trilha.nome = 'Praia do Aventureiro',
+trilha.distancia = '23 km',
+trilha.pontosIntermediarios = ['Cachoeira da Noiva', 'Praia Aconchego']
+trilha.partida = 'Vila'
+//ao colocar trilha.x, ele está criando propriedades automaticamente sobre o objeto trilha. Digitando o ponto, eu acesso as informações encapsuladas no objeto
+
+console.log(trilha)
+console.log(trilha.pontosIntermediarios) 
+console.log(trilha.pontosIntermediarios[0])
 
 
 
