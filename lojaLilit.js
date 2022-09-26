@@ -35,34 +35,35 @@ function comprar(comprasCliente) {
     };
         
         if (valorTotal >= 50 && valorTotal < 80) {
+            printDesconto = "5%"
             desconto += valorTotal * .05
             valorComDesconto = valorTotal - desconto
-             return console.log(`Sua compra foi de R$ ${valorTotal} mas com desconto de 5% você pagará ${valorComDesconto}`)
         }
         else if (valorTotal >= 80 && valorTotal < 100 ) {
+            printDesconto = "10%"
             desconto += valorTotal * .1
             valorComDesconto = valorTotal - desconto
-            return console.log(`Sua compra foi de R$ ${valorTotal} mas com desconto de 10% você pagará ${valorComDesconto}`)
         }
         else if (valorTotal >= 100 && valorTotal < 200 ) {
+            printDesconto = "20%"
             desconto += valorTotal * .2
             valorComDesconto = valorTotal - desconto
-            return console.log(`Sua compra foi de R$ ${valorTotal} mas com desconto de 20% você pagará ${valorComDesconto}`)
         }
         else if (valorTotal >= 200 ) {
+            printDesconto = "50%"
             desconto += valorTotal * .5
             valorComDesconto = valorTotal - desconto
-            return console.log(`Sua compra foi de R$ ${valorTotal} mas com desconto de 50% você pagará ${valorComDesconto}`)
         }
         else { 
             valorTotal += item.valor          
             return console.log(`esse é o valor total ${valorTotal}`)
         }
+        return console.log(`Sua compra foi de R$ ${valorTotal} mas com desconto de ${printDesconto} você pagará ${valorComDesconto}`)
     }
       
 
 
-comprar(comprasFlavio)
+comprar(comprasLilit)
 
 
 
